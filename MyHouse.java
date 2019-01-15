@@ -73,6 +73,9 @@ public class MyHouse
         roof.makeVisible();
         
         //draw first part of door
-        door1.changeColor("black")
+        door1.changeColor("black");
+        door1.moveVertical(50);
+        door1.moveHorizontal(50);
+        door1.makeVisible();
     }
 }
