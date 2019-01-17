@@ -1,6 +1,6 @@
 
 /**
- * Creates an instance of a Tree.
+ * Creates an instance of a tree.
  *
  * @author N. Anstoetz
  * @version January 15, 2019
@@ -8,13 +8,13 @@
 public class Tree
 {
     // instance variables - replace the example below with your own
-    private Triangle Tree1;
-    private Triangle Tree2;
-    private Triangle Tree3;
-    private Square Tree4;
+    private Triangle tree1;
+    private Triangle tree2;
+    private Triangle tree3;
+    private Square tree4;
 
     /**
-     * Constructor for objects of class Tree
+     * Constructor for objects of class tree
      * 
      * @param x     the horizontal position of the tree
      * @param y     the vertical position of the tree
@@ -22,10 +22,10 @@ public class Tree
     public Tree(int x, int y)
     {
         // initialise instance variables
-        Tree1 = new Triangle();
-        Tree2 = new Triangle();
-        Tree3 = new Triangle();
-        Tree4 = new Square();
+        tree1 = new Triangle();
+        tree2 = new Triangle();
+        tree3 = new Triangle();
+        tree4 = new Square();
         
         // actually draw the tree
         drawTree(x, y);
@@ -40,26 +40,37 @@ public class Tree
     public void drawTree(int x, int y)
     {
         // put your code here
-        Tree1.changeColor("green");
-        Tree1.makeVisible();
+        tree1.changeColor("green");
+        tree1.makeVisible();
+        // translate horizontally and vertically by x and y
+        tree1.moveHorizontal(x);
+        tree1.moveVertical(y);
         
         //
-        Tree2.changeColor("green");
-        Tree2.makeVisible();
-        Tree2.moveVertical(10);
+        tree2.changeColor("green");
+        tree2.makeVisible();
+        tree2.moveVertical(10);
+        // translate horizontally and vertically by x and y
+        tree2.moveHorizontal(x);
+        tree2.moveVertical(y);
         
         //
-        Tree3.changeColor("green");
-        Tree3.moveVertical(20);
-        Tree3.makeVisible();
+        tree3.changeColor("green");
+        tree3.moveVertical(20);
+        tree3.makeVisible();
+        // translate horizontally and vertically by x and y
+        tree3.moveHorizontal(x);
+        tree3.moveVertical(y);
         
         //
-        Tree4.changeColor("black");
-        Tree4.moveVertical(15);
-        Tree4.makeVisible();
-        Tree4.moveHorizontal(-15);
-        Tree4.changeSize(10);
-        
+        tree4.changeColor("black");
+        tree4.moveVertical(15);
+        tree4.makeVisible();
+        tree4.moveHorizontal(-15);
+        tree4.changeSize(10);
+        // translate horizontally and vertically by x and y
+        tree4.moveHorizontal(x);
+        tree4.moveVertical(y);
         
         // translate the tree to the specified location
         
