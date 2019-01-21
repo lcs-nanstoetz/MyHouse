@@ -49,14 +49,14 @@ public class Bird
        bird2.moveVertical(y);
        
        background2.moveHorizontal(50);      
-       background2.changeColor("white");
+       background2.changeColor("blue");
        background2.changeSize(50);
        background2.makeVisible();
        background2.moveVertical(10);
        background2.moveHorizontal(x);
        background2.moveVertical(y);
             
-       background1.changeColor("white");
+       background1.changeColor("blue");
        background1.changeSize(45);
        background1.makeVisible();
        background1.moveHorizontal(-5);
@@ -64,7 +64,7 @@ public class Bird
        background1.moveHorizontal(x);
        background1.moveVertical(y);
        
-       background3.changeColor("white");
+       background3.changeColor("blue");
        background3.changeSize(45);
        background3.makeVisible();
        background3.moveVertical(25);

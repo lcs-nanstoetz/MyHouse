@@ -40,23 +40,23 @@ public class Tree
     public void drawTree(int x, int y)
     {
         // put your code here
-        tree1.changeColor("green");
+        tree1.changeColor("red");
         tree1.makeVisible();
         // translate horizontally and vertically by x and y
         tree1.moveHorizontal(x);
         tree1.moveVertical(y);
         
         //
-        tree2.changeColor("green");
+        tree2.changeColor("red");
         tree2.makeVisible();
-        tree2.moveVertical(10);
+        tree2.moveVertical(5);
         // translate horizontally and vertically by x and y
         tree2.moveHorizontal(x);
         tree2.moveVertical(y);
         
         //
-        tree3.changeColor("green");
-        tree3.moveVertical(20);
+        tree3.changeColor("red");
+        tree3.moveVertical(10);
         tree3.makeVisible();
         // translate horizontally and vertically by x and y
         tree3.moveHorizontal(x);
@@ -64,9 +64,9 @@ public class Tree
         
         //
         tree4.changeColor("black");
-        tree4.moveVertical(15);
+        tree4.moveVertical(7);
         tree4.makeVisible();
-        tree4.moveHorizontal(-15);
+        tree4.moveHorizontal(-7);
         tree4.changeSize(10);
         // translate horizontally and vertically by x and y
         tree4.moveHorizontal(x);
